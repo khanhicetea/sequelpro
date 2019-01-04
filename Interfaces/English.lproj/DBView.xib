@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1911" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
         <development version="5100" identifier="xcode"/>
@@ -104,7 +104,7 @@
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" id="6685">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="218" height="38"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="218" height="19"/>
                                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -165,7 +165,7 @@
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <tableView identifier="TablesListTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" columnReordering="NO" autosaveColumns="NO" id="22" customClass="SPTableView">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="214" height="334"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="214" height="19"/>
                                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -231,7 +231,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="45" id="7692" userLabel="Table View (Activities)">
-                                                                <rect key="frame" x="0.0" y="0.0" width="216" height="166"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="216" height="47"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -276,7 +276,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" id="4484">
-                                                                <rect key="frame" x="0.0" y="0.0" width="214" height="166"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="214" height="19"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -488,13 +488,13 @@
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <tableView identifier="TableStructureColumnsTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="SPTableStructureSource" rowHeight="16" headerView="3926" id="232" customClass="SPTableView">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="288"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="690" height="18"/>
                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                                     <tableColumns>
-                                                                                        <tableColumn identifier="name" width="57" minWidth="50" maxWidth="1000" id="233">
+                                                                                        <tableColumn identifier="name" width="55" minWidth="50" maxWidth="1000" id="233">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Field">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -507,7 +507,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="type" width="69.5" minWidth="65" maxWidth="1000" id="245">
+                                                                                        <tableColumn identifier="type" width="71" minWidth="65" maxWidth="1000" id="245">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Type">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -598,7 +598,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="default" width="42.5" minWidth="34" maxWidth="1000" id="248">
+                                                                                        <tableColumn identifier="default" width="43" minWidth="34" maxWidth="1000" id="248">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Default">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -611,7 +611,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Extra" width="66" minWidth="60" maxWidth="1000" id="249">
+                                                                                        <tableColumn identifier="Extra" width="66.5" minWidth="60" maxWidth="1000" id="249">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Extra">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -624,7 +624,7 @@
                                                                                             </comboBoxCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="encoding" width="55.5" minWidth="10" maxWidth="1000" id="7484">
+                                                                                        <tableColumn identifier="encoding" width="56" minWidth="10" maxWidth="1000" id="7484">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Encoding">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -644,7 +644,7 @@
                                                                                             </popUpButtonCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="collation" width="60.5" minWidth="10" maxWidth="1000" id="7486">
+                                                                                        <tableColumn identifier="collation" width="61" minWidth="10" maxWidth="1000" id="7486">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Collation">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -664,7 +664,7 @@
                                                                                             </popUpButtonCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="comment" width="42" minWidth="10" maxWidth="1000" id="7488">
+                                                                                        <tableColumn identifier="comment" width="42.5" minWidth="10" maxWidth="1000" id="7488">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Comment">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -842,13 +842,13 @@
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <tableView identifier="TableStructureIndexesTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="16" headerView="3923" id="289" customClass="SPTableView">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="142"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="688" height="18"/>
                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                                     <tableColumns>
-                                                                                        <tableColumn identifier="Non_unique" editable="NO" width="80" minWidth="40" maxWidth="1000" id="288">
+                                                                                        <tableColumn identifier="Non_unique" editable="NO" width="78" minWidth="40" maxWidth="1000" id="288">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Non_unique">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -861,7 +861,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Key_name" editable="NO" width="70" minWidth="40" maxWidth="1000" id="290">
+                                                                                        <tableColumn identifier="Key_name" editable="NO" width="69" minWidth="40" maxWidth="1000" id="290">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Key_name">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -874,7 +874,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Seq_in_index" editable="NO" width="82" minWidth="10" maxWidth="1000" id="291">
+                                                                                        <tableColumn identifier="Seq_in_index" editable="NO" width="81" minWidth="10" maxWidth="1000" id="291">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Seq_in_index">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -900,7 +900,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Collation" editable="NO" width="60" minWidth="10" maxWidth="1000" id="293">
+                                                                                        <tableColumn identifier="Collation" editable="NO" width="59.5" minWidth="10" maxWidth="1000" id="293">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Collation">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -913,7 +913,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Cardinality" editable="NO" width="70" minWidth="10" maxWidth="1000" id="294">
+                                                                                        <tableColumn identifier="Cardinality" editable="NO" width="69.5" minWidth="10" maxWidth="1000" id="294">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Cardinality">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -926,7 +926,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Sub_part" editable="NO" width="60.5" minWidth="10" maxWidth="1000" id="295">
+                                                                                        <tableColumn identifier="Sub_part" editable="NO" width="60" minWidth="10" maxWidth="1000" id="295">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Sub_part">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -939,7 +939,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Packed" editable="NO" width="47.5" minWidth="10" maxWidth="1000" id="296">
+                                                                                        <tableColumn identifier="Packed" editable="NO" width="47" minWidth="10" maxWidth="1000" id="296">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Packed">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -952,7 +952,7 @@
                                                                                             </textFieldCell>
                                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                                         </tableColumn>
-                                                                                        <tableColumn identifier="Comment" editable="NO" width="108.97599792480469" minWidth="55.976001739501953" maxWidth="1000" id="297">
+                                                                                        <tableColumn identifier="Comment" editable="NO" width="109.97599792480469" minWidth="55.976001739501953" maxWidth="1000" id="297">
                                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Comment">
                                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1078,10 +1078,10 @@
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <clipView key="contentView" id="lwO-LP-RWZ">
                                                                             <rect key="frame" x="1" y="0.0" width="695" height="435"/>
-                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <tableView identifier="TableContentTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowHeight="16" headerView="3920" id="36" customClass="SPCopyTable">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="418"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="626" height="18"/>
                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1261,7 +1261,6 @@
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <ruleEditor nestingMode="compound" rowHeight="29" id="FF9-z2-9od">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="694" height="40"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                                     <connections>
                                                                                         <outlet property="delegate" destination="ki9-Po-bdr" id="rFd-07-AiC"/>
@@ -1371,7 +1370,7 @@
                                                             <binding destination="1907" name="value" keyPath="values.EditInSheetEnabled" id="8016"/>
                                                         </connections>
                                                     </button>
-                                                    <splitView dividerStyle="thin" id="7206" customClass="SPSplitView">
+                                                    <splitView identifier="queryAndStatusSplitView" wantsLayer="YES" dividerStyle="thin" id="7206" customClass="SPSplitView">
                                                         <rect key="frame" x="7" y="33" width="695" height="511"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
@@ -1392,15 +1391,17 @@
                                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                         <clipView key="contentView" id="npE-bg-ppa">
                                                                                             <rect key="frame" x="1" y="1" width="695" height="141"/>
-                                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                             <subviews>
-                                                                                                <textView focusRingType="none" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" usesRuler="YES" id="8254" customClass="SPTextView">
+                                                                                                <textView focusRingType="none" importsGraphics="NO" richText="NO" horizontallyResizable="YES" findStyle="panel" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" id="8254" customClass="SPTextView">
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="695" height="141"/>
                                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                     <size key="minSize" width="695" height="141"/>
                                                                                                     <size key="maxSize" width="100000" height="10000000"/>
                                                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                                    <size key="minSize" width="695" height="141"/>
+                                                                                                    <size key="maxSize" width="100000" height="10000000"/>
                                                                                                     <connections>
                                                                                                         <binding destination="1907" name="textColor" keyPath="values.CustomQueryEditorTextColor" id="8258">
                                                                                                             <dictionary key="options">
@@ -1435,239 +1436,274 @@
                                                                                     <customView id="6RR-Sh-9L3" customClass="SPButtonBar">
                                                                                         <rect key="frame" x="0.0" y="213" width="695" height="23"/>
                                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    </customView>
-                                                                                    <popUpButton id="7221">
-                                                                                        <rect key="frame" x="0.0" y="213" width="35" height="23"/>
-                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                                        <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="right" alignment="center" lineBreakMode="truncatingTail" inset="2" pullsDown="YES" arrowPosition="noArrow" autoenablesItems="NO" selectedItem="7236" id="7231">
-                                                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                                            <font key="font" metaFont="menu"/>
-                                                                                            <menu key="menu" title="OtherViews" autoenablesItems="NO" id="7232">
-                                                                                                <items>
-                                                                                                    <menuItem image="button_action" hidden="YES" id="7247"/>
-                                                                                                    <menuItem title="Previous Query from History" tag="3" keyEquivalent="" toolTip="Replaces the current query by the previous one coming from the history." id="7243">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" control="YES"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7319"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Next Query from History" tag="4" keyEquivalent="" toolTip="Replaces the current query by the next one coming from the history." id="7242">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" control="YES"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7315"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="History Replaces Editor Content" id="7253">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.QueryHistoryReplacesContent" id="7287"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7241"/>
-                                                                                                    <menuItem title="Favorite Replaces Editor Content" id="7251">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.QueryFavoriteReplacesContent" id="7294"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7252"/>
-                                                                                                    <menuItem title="Shift Right" tag="6" keyEquivalent="]" id="7240">
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7327"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Shift Left" tag="7" keyEquivalent="[" id="7239">
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7322"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Comment Line" tag="11" keyEquivalent="/" id="7249">
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7308"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Comment Current Query" tag="12" enabled="NO" alternate="YES" keyEquivalent="/" id="7250">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7328"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Completion List" tag="8" id="7238">
-                                                                                                        <string key="keyEquivalent" base64-UTF8="YES">
+                                                                                        <subviews>
+                                                                                            <popUpButton id="7221">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="35" height="23"/>
+                                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                                                <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="right" alignment="center" lineBreakMode="truncatingTail" inset="2" pullsDown="YES" arrowPosition="noArrow" autoenablesItems="NO" selectedItem="7236" id="7231">
+                                                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                                                    <font key="font" metaFont="menu"/>
+                                                                                                    <menu key="menu" title="OtherViews" autoenablesItems="NO" id="7232">
+                                                                                                        <items>
+                                                                                                            <menuItem image="button_action" hidden="YES" id="7247"/>
+                                                                                                            <menuItem title="Previous Query from History" tag="3" keyEquivalent="" toolTip="Replaces the current query by the previous one coming from the history." id="7243">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7319"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Next Query from History" tag="4" keyEquivalent="" toolTip="Replaces the current query by the next one coming from the history." id="7242">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7315"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="History Replaces Editor Content" id="7253">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.QueryHistoryReplacesContent" id="7287"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7241"/>
+                                                                                                            <menuItem title="Favorite Replaces Editor Content" id="7251">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.QueryFavoriteReplacesContent" id="7294"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7252"/>
+                                                                                                            <menuItem title="Shift Right" tag="6" keyEquivalent="]" id="7240">
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7327"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Shift Left" tag="7" keyEquivalent="[" id="7239">
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7322"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Comment Line" tag="11" keyEquivalent="/" id="7249">
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7308"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Comment Current Query" tag="12" enabled="NO" alternate="YES" keyEquivalent="/" id="7250">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7328"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Completion List" tag="8" id="7238">
+                                                                                                                <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7309"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Show Completion List" id="7255">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <menu key="submenu" title="Show Completion List" id="7256">
+                                                                                                                    <items>
+                                                                                                                        <menuItem title="All Databases Names" tag="8000" keyEquivalent="1" id="7257">
+                                                                                                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                                            <connections>
+                                                                                                                                <action selector="showCompletionList:" target="134" id="7323"/>
+                                                                                                                            </connections>
+                                                                                                                        </menuItem>
+                                                                                                                        <menuItem title="All Table and View Names" tag="8001" keyEquivalent="2" id="7258">
+                                                                                                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                                            <connections>
+                                                                                                                                <action selector="showCompletionList:" target="134" id="7310"/>
+                                                                                                                            </connections>
+                                                                                                                        </menuItem>
+                                                                                                                        <menuItem title="All Field Names From Current Table" tag="8002" keyEquivalent="3" id="7259">
+                                                                                                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                                            <connections>
+                                                                                                                                <action selector="showCompletionList:" target="134" id="7317"/>
+                                                                                                                            </connections>
+                                                                                                                        </menuItem>
+                                                                                                                    </items>
+                                                                                                                </menu>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7237"/>
+                                                                                                            <menuItem title="Editor Font..." id="7233">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7320"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Indent New Lines" state="on" tag="9" id="7236">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7321"/>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.CustomQueryAutoIndent" id="7295"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Auto-pair Characters" state="on" tag="10" id="7235">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7307"/>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.CustomQueryAutoPairCharacters" id="7291"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Auto-uppercase Keywords" id="7234">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7313"/>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.CustomQueryAutoUppercaseKeywords" id="7289"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Auto-completion" id="7254">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.CustomQueryAutoComplete" id="7292"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Update Help while typing" id="7248">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="gearMenuItemSelected:" target="134" id="7318"/>
+                                                                                                                    <binding destination="1907" name="value" keyPath="values.CustomQueryUpdateAutoHelp" id="7293"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                        </items>
+                                                                                                    </menu>
+                                                                                                </popUpButtonCell>
+                                                                                            </popUpButton>
+                                                                                            <popUpButton toolTip="Choose a favorite from the menu or save queries to the favorites (⌥⌘F)" verticalHuggingPriority="750" id="7218">
+                                                                                                <rect key="frame" x="38" y="0.0" width="129" height="22"/>
+                                                                                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                                                                                <popUpButtonCell key="cell" type="recessed" title="Query Favorites" bezelStyle="recessed" alignment="center" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" preferredEdge="maxY" selectedItem="7264" id="7262">
+                                                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                                                                    <font key="font" metaFont="smallSystem"/>
+                                                                                                    <string key="keyEquivalent">f</string>
+                                                                                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                    <menu key="menu" title="OtherViews" id="7263">
+                                                                                                        <items>
+                                                                                                            <menuItem title="Query Favorites" hidden="YES" id="7264"/>
+                                                                                                            <menuItem title="Save Query to Favorites" tag="100000" toolTip="Save current query, selection, or - if no selection or current query could be found - the entire content to Favorite." id="7265">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Save All to Favorites" tag="100001" alternate="YES" toolTip="Save editor content to Favorite. Press ⌥ to restrict for current query or selection." id="7269">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Edit Favorites..." id="7266"/>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7267"/>
+                                                                                                            <menuItem title="..placeholder for seachfield.." id="7268">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <outlet property="view" destination="6431" id="7303"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7270"/>
+                                                                                                        </items>
                                                                                                         <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7309"/>
+                                                                                                            <outlet property="delegate" destination="134" id="7306"/>
                                                                                                         </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Show Completion List" id="7255">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <menu key="submenu" title="Show Completion List" id="7256">
-                                                                                                            <items>
-                                                                                                                <menuItem title="All Databases Names" tag="8000" keyEquivalent="1" id="7257">
-                                                                                                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                                                    <connections>
-                                                                                                                        <action selector="showCompletionList:" target="134" id="7323"/>
-                                                                                                                    </connections>
-                                                                                                                </menuItem>
-                                                                                                                <menuItem title="All Table and View Names" tag="8001" keyEquivalent="2" id="7258">
-                                                                                                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                                                    <connections>
-                                                                                                                        <action selector="showCompletionList:" target="134" id="7310"/>
-                                                                                                                    </connections>
-                                                                                                                </menuItem>
-                                                                                                                <menuItem title="All Field Names From Current Table" tag="8002" keyEquivalent="3" id="7259">
-                                                                                                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                                                    <connections>
-                                                                                                                        <action selector="showCompletionList:" target="134" id="7317"/>
-                                                                                                                    </connections>
-                                                                                                                </menuItem>
-                                                                                                            </items>
-                                                                                                        </menu>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7237"/>
-                                                                                                    <menuItem title="Editor Font..." id="7233">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7320"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Indent New Lines" state="on" tag="9" id="7236">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7321"/>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.CustomQueryAutoIndent" id="7295"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Auto-pair Characters" state="on" tag="10" id="7235">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7307"/>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.CustomQueryAutoPairCharacters" id="7291"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Auto-uppercase Keywords" id="7234">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7313"/>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.CustomQueryAutoUppercaseKeywords" id="7289"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Auto-completion" id="7254">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.CustomQueryAutoComplete" id="7292"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Update Help while typing" id="7248">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="gearMenuItemSelected:" target="134" id="7318"/>
-                                                                                                            <binding destination="1907" name="value" keyPath="values.CustomQueryUpdateAutoHelp" id="7293"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                </items>
-                                                                                            </menu>
-                                                                                        </popUpButtonCell>
-                                                                                    </popUpButton>
-                                                                                    <popUpButton toolTip="Choose a favorite from the menu or save queries to the favorites (⌥⌘F)" verticalHuggingPriority="750" id="7218">
-                                                                                        <rect key="frame" x="38" y="213" width="129" height="22"/>
-                                                                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                                                                        <popUpButtonCell key="cell" type="recessed" title="Query Favorites" bezelStyle="recessed" alignment="center" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" preferredEdge="maxY" selectedItem="7264" id="7262">
-                                                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                                                            <font key="font" metaFont="smallSystem"/>
-                                                                                            <string key="keyEquivalent">f</string>
-                                                                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                            <menu key="menu" title="OtherViews" id="7263">
-                                                                                                <items>
-                                                                                                    <menuItem title="Query Favorites" hidden="YES" id="7264"/>
-                                                                                                    <menuItem title="Save Query to Favorites" tag="100000" toolTip="Save current query, selection, or - if no selection or current query could be found - the entire content to Favorite." id="7265">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" option="YES"/>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Save All to Favorites" tag="100001" alternate="YES" toolTip="Save editor content to Favorite. Press ⌥ to restrict for current query or selection." id="7269">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Edit Favorites..." id="7266"/>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7267"/>
-                                                                                                    <menuItem title="..placeholder for seachfield.." id="7268">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <outlet property="view" destination="6431" id="7303"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7270"/>
-                                                                                                </items>
+                                                                                                    </menu>
+                                                                                                </popUpButtonCell>
                                                                                                 <connections>
-                                                                                                    <outlet property="delegate" destination="134" id="7306"/>
+                                                                                                    <action selector="chooseQueryFavorite:" target="134" id="7316"/>
                                                                                                 </connections>
-                                                                                            </menu>
-                                                                                        </popUpButtonCell>
-                                                                                        <connections>
-                                                                                            <action selector="chooseQueryFavorite:" target="134" id="7316"/>
-                                                                                        </connections>
-                                                                                    </popUpButton>
-                                                                                    <popUpButton toolTip="Choose a query from your recent queries (⌥⌘Y)" verticalHuggingPriority="750" id="7217">
-                                                                                        <rect key="frame" x="177" y="213" width="145" height="22"/>
-                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                                        <popUpButtonCell key="cell" type="recessed" title="Query History" bezelStyle="recessed" alignment="center" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" preferredEdge="maxY" selectedItem="7273" id="7271">
-                                                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                                                            <font key="font" metaFont="smallSystem"/>
-                                                                                            <string key="keyEquivalent">y</string>
-                                                                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                            <menu key="menu" title="OtherViews" id="7272">
-                                                                                                <items>
-                                                                                                    <menuItem title="Query History" hidden="YES" id="7273"/>
-                                                                                                    <menuItem title="Copy History" tag="300000" toolTip="Copy all history items onto the clipboard." id="7279">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                                                                            </popUpButton>
+                                                                                            <popUpButton toolTip="Choose a query from your recent queries (⌥⌘Y)" verticalHuggingPriority="750" id="7217">
+                                                                                                <rect key="frame" x="177" y="0.0" width="145" height="22"/>
+                                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                                                <popUpButtonCell key="cell" type="recessed" title="Query History" bezelStyle="recessed" alignment="center" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" preferredEdge="maxY" selectedItem="7273" id="7271">
+                                                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                                                                    <font key="font" metaFont="smallSystem"/>
+                                                                                                    <string key="keyEquivalent">y</string>
+                                                                                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                    <menu key="menu" title="OtherViews" id="7272">
+                                                                                                        <items>
+                                                                                                            <menuItem title="Query History" hidden="YES" id="7273"/>
+                                                                                                            <menuItem title="Copy History" tag="300000" toolTip="Copy all history items onto the clipboard." id="7279">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="copyQueryHistory:" target="134" id="7312"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Save History…" tag="300001" alternate="YES" toolTip="Save all history items to file. Press ⌥ to copy all history items onto the clipboard." id="7276">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="saveQueryHistory:" target="134" id="7324"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Clear History" tag="300002" id="7277">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="clearQueryHistory:" target="134" id="7311"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7278"/>
+                                                                                                            <menuItem title="..placeholder for seachfield.." id="7274">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                                                <connections>
+                                                                                                                    <outlet property="view" destination="6447" id="7299"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="7275"/>
+                                                                                                        </items>
                                                                                                         <connections>
-                                                                                                            <action selector="copyQueryHistory:" target="134" id="7312"/>
+                                                                                                            <outlet property="delegate" destination="134" id="7302"/>
                                                                                                         </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Save History…" tag="300001" alternate="YES" toolTip="Save all history items to file. Press ⌥ to copy all history items onto the clipboard." id="7276">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="saveQueryHistory:" target="134" id="7324"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Clear History" tag="300002" id="7277">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="clearQueryHistory:" target="134" id="7311"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7278"/>
-                                                                                                    <menuItem title="..placeholder for seachfield.." id="7274">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                                        <connections>
-                                                                                                            <outlet property="view" destination="6447" id="7299"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="7275"/>
-                                                                                                </items>
+                                                                                                    </menu>
+                                                                                                </popUpButtonCell>
                                                                                                 <connections>
-                                                                                                    <outlet property="delegate" destination="134" id="7302"/>
+                                                                                                    <action selector="chooseQueryHistory:" target="134" id="7326"/>
+                                                                                                    <binding destination="1907" name="hidden" keyPath="values.CustomQueryMaxHistoryItems" id="7290">
+                                                                                                        <dictionary key="options">
+                                                                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                                                                        </dictionary>
+                                                                                                    </binding>
                                                                                                 </connections>
-                                                                                            </menu>
-                                                                                        </popUpButtonCell>
-                                                                                        <connections>
-                                                                                            <action selector="chooseQueryHistory:" target="134" id="7326"/>
-                                                                                            <binding destination="1907" name="hidden" keyPath="values.CustomQueryMaxHistoryItems" id="7290">
-                                                                                                <dictionary key="options">
-                                                                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                                                                                </dictionary>
-                                                                                            </binding>
-                                                                                        </connections>
-                                                                                    </popUpButton>
+                                                                                            </popUpButton>
+                                                                                            <popUpButton verticalHuggingPriority="750" id="8316" customClass="SPComboPopupButton">
+                                                                                                <rect key="frame" x="507" y="0.0" width="180" height="22"/>
+                                                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                                                                <popUpButtonCell key="cell" type="roundRect" title="Run Current" bezelStyle="roundedRect" alignment="center" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="8319" id="8317" customClass="SPComboPopupButtonCell">
+                                                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                                                    <font key="font" metaFont="smallSystem"/>
+                                                                                                    <menu key="menu" title="OtherViews" id="8318">
+                                                                                                        <items>
+                                                                                                            <menuItem title="Run Current" hidden="YES" id="8319"/>
+                                                                                                            <menuItem title="Run Current Query" tag="2" keyEquivalent="r" id="8323">
+                                                                                                                <connections>
+                                                                                                                    <action selector="runPrimaryQueryAction:" target="134" id="8329"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem isSeparatorItem="YES" id="8327"/>
+                                                                                                            <menuItem title="Run All Queries" tag="1" keyEquivalent="r" id="8324">
+                                                                                                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="runSecondaryQueryAction:" target="134" id="8330"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                            <menuItem title="Switch Default" id="8321">
+                                                                                                                <connections>
+                                                                                                                    <action selector="switchDefaultQueryAction:" target="134" id="8333"/>
+                                                                                                                </connections>
+                                                                                                            </menuItem>
+                                                                                                        </items>
+                                                                                                    </menu>
+                                                                                                </popUpButtonCell>
+                                                                                                <connections>
+                                                                                                    <action selector="runPrimaryQueryAction:" target="134" id="8328"/>
+                                                                                                </connections>
+                                                                                            </popUpButton>
+                                                                                        </subviews>
+                                                                                    </customView>
                                                                                     <scrollView focusRingType="none" autohidesScrollers="YES" horizontalLineScroll="18" horizontalPageScroll="10" verticalLineScroll="18" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="7223">
                                                                                         <rect key="frame" x="-1" y="-1" width="697" height="214"/>
                                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                         <clipView key="contentView" id="NVV-XL-mVZ">
                                                                                             <rect key="frame" x="1" y="0.0" width="695" height="213"/>
-                                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                             <subviews>
                                                                                                 <tableView identifier="CustomQueryResultsTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowHeight="16" headerView="7227" id="7224" customClass="SPCopyTable">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="196"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="18"/>
                                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1708,39 +1744,6 @@ Gw
                                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                                         </tableHeaderView>
                                                                                     </scrollView>
-                                                                                    <popUpButton verticalHuggingPriority="750" id="8316" customClass="SPComboPopupButton">
-                                                                                        <rect key="frame" x="507" y="213" width="180" height="22"/>
-                                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                                                                        <popUpButtonCell key="cell" type="roundRect" title="Run Current" bezelStyle="roundedRect" alignment="center" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="8319" id="8317" customClass="SPComboPopupButtonCell">
-                                                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                                            <font key="font" metaFont="smallSystem"/>
-                                                                                            <menu key="menu" title="OtherViews" id="8318">
-                                                                                                <items>
-                                                                                                    <menuItem title="Run Current" hidden="YES" id="8319"/>
-                                                                                                    <menuItem title="Run Current Query" tag="2" keyEquivalent="r" id="8323">
-                                                                                                        <connections>
-                                                                                                            <action selector="runPrimaryQueryAction:" target="134" id="8329"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem isSeparatorItem="YES" id="8327"/>
-                                                                                                    <menuItem title="Run All Queries" tag="1" keyEquivalent="r" id="8324">
-                                                                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="runSecondaryQueryAction:" target="134" id="8330"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                    <menuItem title="Switch Default" id="8321">
-                                                                                                        <connections>
-                                                                                                            <action selector="switchDefaultQueryAction:" target="134" id="8333"/>
-                                                                                                        </connections>
-                                                                                                    </menuItem>
-                                                                                                </items>
-                                                                                            </menu>
-                                                                                        </popUpButtonCell>
-                                                                                        <connections>
-                                                                                            <action selector="runPrimaryQueryAction:" target="134" id="8328"/>
-                                                                                        </connections>
-                                                                                    </popUpButton>
                                                                                 </subviews>
                                                                             </customView>
                                                                         </subviews>
@@ -1772,9 +1775,9 @@ Gw
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Nr9-eI-xLJ">
                                                                             <rect key="frame" x="0.0" y="0.0" width="671" height="74"/>
-                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
-                                                                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" horizontallyResizable="YES" richText="NO" verticallyResizable="YES" usesFontPanel="YES" allowsNonContiguousLayout="YES" id="8248">
+                                                                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="8248">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="671" height="74"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1782,6 +1785,8 @@ Gw
                                                                                     <size key="minSize" width="671" height="74"/>
                                                                                     <size key="maxSize" width="887" height="10000000"/>
                                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <size key="minSize" width="671" height="74"/>
+                                                                                    <size key="maxSize" width="887" height="10000000"/>
                                                                                 </textView>
                                                                             </subviews>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1848,14 +1853,16 @@ Gw
                                                                             <rect key="frame" x="1" y="1" width="541" height="71"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <subviews>
-                                                                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="panel" continuousSpellChecking="YES" smartInsertDelete="YES" id="8236">
+                                                                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" verticallyResizable="YES" smartInsertDelete="YES" id="8236">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="541" height="71"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                                    <size key="minSize" width="541" height="71"/>
+                                                                                    <size key="minSize" width="537" height="71"/>
                                                                                     <size key="maxSize" width="1097" height="10000000"/>
                                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <size key="minSize" width="537" height="71"/>
+                                                                                    <size key="maxSize" width="1097" height="10000000"/>
                                                                                     <connections>
                                                                                         <outlet property="delegate" destination="1277" id="8237"/>
                                                                                     </connections>
@@ -1898,9 +1905,11 @@ Gw
                                                                                     <rect key="frame" x="0.0" y="0.0" width="541" height="198"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                                    <size key="minSize" width="541" height="198"/>
+                                                                                    <size key="minSize" width="537" height="198"/>
                                                                                     <size key="maxSize" width="1097" height="10000000"/>
                                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <size key="minSize" width="537" height="198"/>
+                                                                                    <size key="maxSize" width="1097" height="10000000"/>
                                                                                     <connections>
                                                                                         <outlet property="delegate" destination="1277" id="8243"/>
                                                                                     </connections>
@@ -2216,10 +2225,10 @@ Gw
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="EaV-iG-q8t">
                                                             <rect key="frame" x="1" y="0.0" width="695" height="475"/>
-                                                            <autoresizingMask key="autoresizingMask" />
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <tableView identifier="TableRelationsTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowHeight="16" headerView="5545" id="5548" customClass="SPCopyTable">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="458"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2402,10 +2411,10 @@ Gw
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="tlh-Sg-Saf">
                                                             <rect key="frame" x="1" y="0.0" width="695" height="475"/>
-                                                            <autoresizingMask key="autoresizingMask" />
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <tableView identifier="TableTriggersTableView" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowHeight="16" headerView="6704" id="6701" customClass="SPCopyTable">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="458"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="695" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -3304,10 +3313,10 @@ Gw
                 <rect key="frame" x="0.0" y="0.0" width="379" height="369"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <box autoresizesSubviews="NO" borderType="line" title="Table:" id="5660">
+                    <box autoresizesSubviews="NO" title="Table:" borderType="line" id="5660">
                         <rect key="frame" x="17" y="231" width="345" height="56"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <view key="contentView" id="XVR-xN-dOO">
+                        <view key="contentView">
                             <rect key="frame" x="1" y="1" width="343" height="40"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -3341,10 +3350,10 @@ Gw
                             </subviews>
                         </view>
                     </box>
-                    <box autoresizesSubviews="NO" borderType="line" title="Name" id="7798">
+                    <box autoresizesSubviews="NO" title="Name" borderType="line" id="7798">
                         <rect key="frame" x="17" y="291" width="345" height="58"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <view key="contentView" id="uQj-ax-2Ux">
+                        <view key="contentView">
                             <rect key="frame" x="1" y="1" width="343" height="42"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -3372,10 +3381,10 @@ Gw
                             </subviews>
                         </view>
                     </box>
-                    <box autoresizesSubviews="NO" borderType="line" title="Action" id="5659">
+                    <box autoresizesSubviews="NO" title="Action" borderType="line" id="5659">
                         <rect key="frame" x="17" y="49" width="345" height="87"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <view key="contentView" id="fmY-UV-qsS">
+                        <view key="contentView">
                             <rect key="frame" x="1" y="1" width="343" height="71"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -3442,10 +3451,10 @@ Gw
                             </subviews>
                         </view>
                     </box>
-                    <box autoresizesSubviews="NO" borderType="line" title="References" id="5652">
+                    <box autoresizesSubviews="NO" title="References" borderType="line" id="5652">
                         <rect key="frame" x="17" y="140" width="345" height="87"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <view key="contentView" id="pjf-Q1-6fe">
+                        <view key="contentView">
                             <rect key="frame" x="1" y="1" width="343" height="71"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -3561,10 +3570,10 @@ Gw
                     <userLayoutGuide location="323" affinity="minX"/>
                 </userGuides>
                 <subviews>
-                    <box autoresizesSubviews="NO" borderType="line" title="Trigger:" id="6770">
+                    <box autoresizesSubviews="NO" title="Trigger:" borderType="line" id="6770">
                         <rect key="frame" x="17" y="219" width="326" height="109"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <view key="contentView" id="vJS-Ph-4at">
+                        <view key="contentView">
                             <rect key="frame" x="1" y="1" width="324" height="93"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -3671,15 +3680,17 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="ouK-7i-Xtd">
                             <rect key="frame" x="1" y="1" width="318" height="168"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" smartInsertDelete="YES" id="8230" customClass="SPTextView">
+                                <textView importsGraphics="NO" richText="NO" findStyle="panel" allowsUndo="YES" usesFontPanel="YES" verticallyResizable="YES" smartInsertDelete="YES" id="8230" customClass="SPTextView">
                                     <rect key="frame" x="0.0" y="0.0" width="318" height="168"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="318" height="168"/>
                                     <size key="maxSize" width="592" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="318" height="168"/>
+                                    <size key="maxSize" width="592" height="10000000"/>
                                     <connections>
                                         <outlet property="scrollView" destination="8227" id="8231"/>
                                     </connections>
@@ -3782,7 +3793,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="w4Z-p1-GZA">
                             <rect key="frame" x="1" y="1" width="366" height="204"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" id="8219">
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="204"/>
@@ -3791,6 +3802,8 @@ DQ
                                     <size key="minSize" width="366" height="204"/>
                                     <size key="maxSize" width="753" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="366" height="204"/>
+                                    <size key="maxSize" width="753" height="10000000"/>
                                     <connections>
                                         <outlet property="delegate" destination="134" id="8220"/>
                                     </connections>
@@ -3897,6 +3910,8 @@ Gw
                                     <size key="minSize" width="411" height="264"/>
                                     <size key="maxSize" width="824" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="411" height="264"/>
+                                    <size key="maxSize" width="824" height="10000000"/>
                                     <connections>
                                         <outlet property="scrollView" destination="8210" id="8214"/>
                                     </connections>
@@ -3971,6 +3986,8 @@ Gw
                                     <size key="minSize" width="348" height="175"/>
                                     <size key="maxSize" width="717" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="348" height="175"/>
+                                    <size key="maxSize" width="717" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4223,7 +4240,7 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="14" headerView="6890" id="6889">
-                                <rect key="frame" x="0.0" y="0.0" width="358" height="139"/>
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -4891,13 +4908,15 @@ Gw
                         <rect key="frame" x="1" y="1" width="392" height="110"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="UVh-gz-xnJ">
+                            <textView editable="NO" importsGraphics="NO" richText="NO" allowsUndo="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="UVh-gz-xnJ">
                                 <rect key="frame" x="0.0" y="0.0" width="392" height="110"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="minSize" width="392" height="110"/>
                                 <size key="maxSize" width="463" height="10000000"/>
                                 <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="392" height="110"/>
+                                <size key="maxSize" width="463" height="10000000"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4930,7 +4949,7 @@ Gw
                             <rect key="frame" x="0.0" y="0.0" width="384" height="152"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsNonContiguousLayout="YES" id="Bfr-0R-dqh">
+                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" findStyle="panel" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="Bfr-0R-dqh">
                                     <rect key="frame" x="0.0" y="0.0" width="384" height="152"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4940,11 +4959,13 @@ Gw
                                         <fragment content="Help dummy text">
                                             <attributes>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="384" height="152"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4969,7 +4990,7 @@ Gw
                 <box autoresizesSubviews="NO" wantsLayer="YES" boxType="custom" borderType="line" titlePosition="noTitle" id="Cen-HW-aJR">
                     <rect key="frame" x="0.0" y="-47" width="330" height="136"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <view key="contentView" id="yNs-cH-TWp">
+                    <view key="contentView">
                         <rect key="frame" x="1" y="1" width="328" height="134"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
@@ -4983,11 +5004,11 @@ Gw
     <resources>
         <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSApplicationIcon" width="128" height="128"/>
-        <image name="NSGoLeftTemplate" width="9" height="12"/>
-        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSGoLeftTemplate" width="9" height="9"/>
+        <image name="NSGoRightTemplate" width="9" height="9"/>
         <image name="button_action" width="30" height="22"/>
         <image name="button_add" width="30" height="22"/>
-        <image name="button_bar_handle" width="15" height="23"/>
+        <image name="button_bar_handle" width="11" height="23"/>
         <image name="button_duplicate" width="30" height="22"/>
         <image name="button_edit" width="30" height="22"/>
         <image name="button_edit_mode" width="30" height="22"/>

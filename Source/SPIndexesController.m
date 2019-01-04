@@ -48,6 +48,12 @@ static const NSString *SPNewIndexIndexedColumns = @"IndexedColumns";
 static const NSString *SPNewIndexStorageType    = @"IndexStorageType";
 static const NSString *SPNewIndexKeyBlockSize   = @"IndexKeyBlockSize";
 
+/**
+ * This is the unique KVO context of code that resides in THIS class.
+ * Do not try to give it to other classes, ESPECIALLY NOT child classes!
+ */
+static void *IndexesControllerKVOContext = &IndexesControllerKVOContext;
+
 @interface SPIndexesController ()
 
 - (BOOL)_isFullTextIndexSelected;
@@ -125,7 +131,8 @@ static const NSString *SPNewIndexKeyBlockSize   = @"IndexKeyBlockSize";
 		[[fieldColumn dataCell] setFont:useMonospacedFont ? [NSFont fontWithName:SPDefaultMonospacedFontName size:monospacedFontSize] : [NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
 	}
 
-	[prefs addObserver:self forKeyPath:SPDisplayTableViewVerticalGridlines options:NSKeyValueObservingOptionNew context:NULL];
+	[prefs addObserver:self forKeyPath:SPDisplayTableViewVerticalGridlines options:NSKeyValueObservingOptionNew context:IndexesControllerKVOContext];
+	[prefs addObserver:self forKeyPath:SPUseMonospacedFonts                options:NSKeyValueObservingOptionNew context:IndexesControllerKVOContext];
 }
 
 #pragma mark -
@@ -196,7 +203,7 @@ static const NSString *SPNewIndexKeyBlockSize   = @"IndexKeyBlockSize";
 	// If no initial field has been selected yet - all fields are indexed - add the first field.
 	if (!initialField) initialField = [fields objectAtIndex:0];
 	
-	if (indexedFieldNames) SPClear(indexedFieldNames);
+	[indexedFieldNames release];
 
 	// Reset the indexed columns
 	[indexedFields removeAllObjects];
@@ -477,7 +484,7 @@ static const NSString *SPNewIndexKeyBlockSize   = @"IndexKeyBlockSize";
 	
 	NSString *name = [[availableFields objectAtIndex:index] objectForKey:@"name"];
 	
-	SPClear(availableFields);
+	[availableFields release];
 	
 	return name;
 }
@@ -640,29 +647,35 @@ static const NSString *SPNewIndexKeyBlockSize   = @"IndexKeyBlockSize";
  */
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-	// Display table veiew vertical gridlines preference changed
-	if ([keyPath isEqualToString:SPDisplayTableViewVerticalGridlines]) {
-		[indexesTableView setGridStyleMask:([[change objectForKey:NSKeyValueChangeNewKey] boolValue]) ? NSTableViewSolidVerticalGridLineMask : NSTableViewGridNone];
+	// a parent class (or cocoa) can also use KVO, so we need to watch out to only catch those KVO messages we requested
+	if(context == IndexesControllerKVOContext) {
+		// Display table veiew vertical gridlines preference changed
+		if ([keyPath isEqualToString:SPDisplayTableViewVerticalGridlines]) {
+			[indexesTableView setGridStyleMask:([[change objectForKey:NSKeyValueChangeNewKey] boolValue]) ? NSTableViewSolidVerticalGridLineMask : NSTableViewGridNone];
+		}
+		// Use monospaced fonts preference changed
+		else if ([keyPath isEqualToString:SPUseMonospacedFonts]) {
+
+			BOOL useMonospacedFont = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
+			CGFloat monospacedFontSize = [prefs floatForKey:SPMonospacedFontSize] > 0 ? [prefs floatForKey:SPMonospacedFontSize] : [NSFont smallSystemFontSize];
+
+			for (NSTableColumn *indexColumn in [indexesTableView tableColumns])
+			{
+				[[indexColumn dataCell] setFont:useMonospacedFont ? [NSFont fontWithName:SPDefaultMonospacedFontName size:monospacedFontSize] : [NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
+			}
+
+			for (NSTableColumn *indexColumn in [indexedColumnsTableView tableColumns])
+			{
+				[[indexColumn dataCell] setFont:useMonospacedFont ? [NSFont fontWithName:SPDefaultMonospacedFontName size:monospacedFontSize] : [NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
+			}
+
+			[indexesTableView reloadData];
+
+			[self _reloadIndexedColumnsTableData];
+		}
 	}
-	// Use monospaced fonts preference changed
-	else if ([keyPath isEqualToString:SPUseMonospacedFonts]) {
-
-		BOOL useMonospacedFont = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
-		CGFloat monospacedFontSize = [prefs floatForKey:SPMonospacedFontSize] > 0 ? [prefs floatForKey:SPMonospacedFontSize] : [NSFont smallSystemFontSize];
-
-		for (NSTableColumn *indexColumn in [indexesTableView tableColumns])
-		{
-			[[indexColumn dataCell] setFont:useMonospacedFont ? [NSFont fontWithName:SPDefaultMonospacedFontName size:monospacedFontSize] : [NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
-		}
-
-		for (NSTableColumn *indexColumn in [indexedColumnsTableView tableColumns])
-		{
-			[[indexColumn dataCell] setFont:useMonospacedFont ? [NSFont fontWithName:SPDefaultMonospacedFontName size:monospacedFontSize] : [NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
-		}
-
-		[indexesTableView reloadData];
-
-		[self _reloadIndexedColumnsTableData];
+	else {
+		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
 	}
 }
 
@@ -1026,15 +1039,15 @@ no_or_multiple_matches:
  */
 - (void)_resizeWindowForAdvancedOptionsViewByHeightDelta:(NSInteger)delta
 {
-	NSUInteger popUpMask        = [indexTypePopUpButton autoresizingMask];
-	NSUInteger nameFieldMask    = [indexNameTextField autoresizingMask];
-	NSUInteger scrollMask       = [indexedColumnsScrollView autoresizingMask];
-	NSUInteger buttonMask       = [indexAdvancedOptionsViewButton autoresizingMask];
-	NSUInteger textFieldMask    = [indexAdvancedOptionsViewLabelButton autoresizingMask];
-	NSUInteger advancedViewMask = [indexAdvancedOptionsView autoresizingMask];
-	NSUInteger typeLabelMask    = [indexTypeLabel autoresizingMask];
-	NSUInteger nameLabelMask    = [indexNameLabel autoresizingMask];
-	NSUInteger buttonBarMask    = [(NSView*)anchoredButtonBar autoresizingMask];
+	NSAutoresizingMaskOptions popUpMask        = [indexTypePopUpButton autoresizingMask];
+	NSAutoresizingMaskOptions nameFieldMask    = [indexNameTextField autoresizingMask];
+	NSAutoresizingMaskOptions scrollMask       = [indexedColumnsScrollView autoresizingMask];
+	NSAutoresizingMaskOptions buttonMask       = [indexAdvancedOptionsViewButton autoresizingMask];
+	NSAutoresizingMaskOptions textFieldMask    = [indexAdvancedOptionsViewLabelButton autoresizingMask];
+	NSAutoresizingMaskOptions advancedViewMask = [indexAdvancedOptionsView autoresizingMask];
+	NSAutoresizingMaskOptions typeLabelMask    = [indexTypeLabel autoresizingMask];
+	NSAutoresizingMaskOptions nameLabelMask    = [indexNameLabel autoresizingMask];
+	NSAutoresizingMaskOptions buttonBarMask    = [anchoredButtonBar autoresizingMask];
 
 	NSRect frame = [[self window] frame];
 
@@ -1053,8 +1066,7 @@ no_or_multiple_matches:
 	[indexAdvancedOptionsView setAutoresizingMask:NSViewNotSizable | NSViewMinYMargin];
 	[indexTypeLabel setAutoresizingMask:NSViewNotSizable | NSViewMinYMargin];
 	[indexNameLabel setAutoresizingMask:NSViewNotSizable | NSViewMinYMargin];
-
-	[(NSView*)anchoredButtonBar setAutoresizingMask:NSViewNotSizable | NSViewMinYMargin];
+	[anchoredButtonBar setAutoresizingMask:NSViewNotSizable | NSViewMinYMargin];
 
 	NSInteger newMinHeight = (windowMinHeigth - heightOffset + delta < windowMinHeigth) ? windowMinHeigth : windowMinHeigth - heightOffset + delta;
 
@@ -1078,8 +1090,7 @@ no_or_multiple_matches:
 	[indexAdvancedOptionsView setAutoresizingMask:advancedViewMask];
 	[indexTypeLabel setAutoresizingMask:typeLabelMask];
 	[indexNameLabel setAutoresizingMask:nameLabelMask];
-
-	[(NSView*)anchoredButtonBar setAutoresizingMask:buttonBarMask];
+	[anchoredButtonBar setAutoresizingMask:buttonBarMask];
 }
 
 #pragma mark -
@@ -1095,7 +1106,8 @@ no_or_multiple_matches:
 
 	if (indexedFields) SPClear(indexedFields);
 
-	[prefs removeObserver:self forKeyPath:SPDisplayTableViewVerticalGridlines];
+	[prefs removeObserver:self forKeyPath:SPDisplayTableViewVerticalGridlines]; //TODO: update to ...context: variant after 10.6
+	[prefs removeObserver:self forKeyPath:SPUseMonospacedFonts]; //TODO: update to ...context: variant after 10.6
 
 	[super dealloc];
 }

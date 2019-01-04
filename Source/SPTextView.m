@@ -535,6 +535,8 @@ retry:
 								[possibleCompletions addObject:[NSDictionary dictionaryWithObjectsAndKeys:[[table componentsSeparatedByString:SPUniqueSchemaDelimiter] lastObject], @"display", @"func-small", @"image", tablepath, @"path", @"", @"isRef", nil]];
 								breakFlag = YES;
 								break;
+							default:
+								break;
 						}
 					if(!breakFlag) {
 						NSArray *sortedFields = [allFields sortedArrayUsingDescriptors:@[desc]];
@@ -591,6 +593,7 @@ retry:
 			for (id obj in [tablesListInstance allViewNames])
 				[possibleCompletions addObject:[NSDictionary dictionaryWithObjectsAndKeys:obj, @"display", @"table-view-small-square", @"image", @"", @"isRef", nil]];
 
+#warning Private ivar accessed from outside (#2978)
 			// Add field names to completions list for currently selected table
 			if ([tableDocumentInstance table] != nil)
 				for (id obj in [[tableDocumentInstance valueForKeyPath:@"tableDataInstance"] valueForKey:@"columnNames"])
@@ -1521,8 +1524,11 @@ retry:
 					}
 				}
 			}
-		} else {
+		}
+		else {
+#warning Private ivar accessed from outside (#2978)
 			arr = [NSArray arrayWithArray:[[tableDocumentInstance valueForKeyPath:@"tableDataInstance"] valueForKey:@"columnNames"]];
+
 			if(arr == nil) {
 				arr = @[];
 			}
@@ -3417,7 +3423,7 @@ retry:
 /**
  * Set font panel's valid modes
  */
-- (NSUInteger)validModesForFontPanel:(NSFontPanel *)fontPanel
+- (NSFontPanelModeMask)validModesForFontPanel:(NSFontPanel *)fontPanel
 {
 	return (NSFontPanelSizeModeMask|NSFontPanelCollectionModeMask);
 }
